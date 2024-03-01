@@ -1,0 +1,53 @@
+# Ignorar archivos generados por Visual Studio
+.vs/
+bin/
+obj/
+
+# Ignorar archivos de caché y respaldo
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.log
+*.sqlite
+*.sqlite3
+*.pdb
+*.opendb
+*.sqlite-shm
+*.sqlite-wal
+
+# Ignorar archivos de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de Rider
+.idea/
+
+# Ignorar archivos de Resharper
+_ReSharper*/
+
+# Ignorar archivos de Rider
+.idea/
+*.sln.iml
+
+# Ignorar archivos de NuGet
+*.nuget/
+packages/
+
+# Ignorar archivos de compilación
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]emp/
+[Tt]est[Rr]esult[Bb]uild/
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.swp
