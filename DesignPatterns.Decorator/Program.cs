@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Decorator.Players;
+﻿using DesignPatterns.Decorator.Armors;
+using DesignPatterns.Decorator.Players;
 using DesignPatterns.Decorator.Swords;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,17 @@ namespace DesignPatterns.Decorator
             var enchantedSword = new SharpnessSwordDecorator(sword);
             var equippedPlayer = new SwordPlayerDecorator(player, enchantedSword);
             return equippedPlayer;
+        }
+        // Agregar decoradores a la entidad se puede hacer de forma indefinida
+        public static IPlayer GetPlayer3()
+        {
+            var player = new Player(Guid.NewGuid(), "Player 3", 20, 2, 2);
+            var sword = new Sword(10);
+            var enchantedSword = new SharpnessSwordDecorator(sword);
+            var equippedPlayer = new SwordPlayerDecorator(player, enchantedSword);
+            var armor = new Armor(5);
+            var equippedPlayerWithArmor = new ArmorPlayerDecorator(equippedPlayer, armor);
+            return equippedPlayerWithArmor;
         }
     }
 }
